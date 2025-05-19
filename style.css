@@ -339,6 +339,7 @@ footer{
     font-style: italic;
 }
 
+/* Responsividade tablet */
 @media (max-width:1024px){
     header{
         position: absolute;
@@ -430,6 +431,58 @@ footer{
 
     .copyright{
         margin-bottom: 64px;
+    }
+}
+
+/* Mobile */
+@media(max-width:768px){
+    header menu{
+        height: 64px;
+        width: 100vw;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: var(--primary-color);
+        color: #fff;
+        justify-content: space-evenly;
+    }
+    .hero{
+    }
+    .home{
+        background-image: url(./img/background-mobile.png); 
+    }
+    h2{
+        width: auto;
+        height: auto;
+    }
+
+    .hero img{
+        display: none;
+    }
+
+    .produto:nth-child(2){
+        display: none;
+    }
+     
+    .cardapio{
+        width: 100%;
+    }    
+
+    .cardapio-item.bebidas .produto:nth-child(n+2){
+        display: none;
+    }
+
+    .servico-card p{
+        display: none;
+    }
+
+    .cabecalho-item a{
+        display: none;
+    }
+
+    .contatos-container{
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
 
 }
